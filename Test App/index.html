@@ -46,33 +46,95 @@
         </div>
     </section>
 
-    <section id="engineering" class="eng-section">
-        <div class="container grid-2">
-            <div class="eng-text">
-                <span class="badge">Technical Blueprint</span>
-                <h2>APEX V16 HYBRID</h2>
-                <p>Inspired by the Bugatti Tourbillon, our bespoke 8.3L V16 engine delivers a symphonic 1000HP, augmented by a 400kW tri-motor system.</p>
-                <div class="spec-list">
-                    <div class="spec-item"><span>Output</span><strong>1800 Total HP</strong></div>
-                    <div class="spec-item"><span>Redline</span><strong>9,500 RPM</strong></div>
-                    <div class="spec-item"><span>0-200 KM/H</span><strong>< 5.0s</strong></div>
-                </div>
-            </div>
-            <div class="eng-visual">
-                <div class="blueprint-card">
-                    <img src="https://images.unsplash.com/photo-1486497395402-741046927364?auto=format&fit=crop&w=800" alt="Engine">
-                </div>
-            </div>
-        </div>
-    </section>
+   <section id="engineering" class="eng-section">
 
-    <section id="luxury" class="luxury-banner">
-        <div class="luxury-content">
-            <h3 class="gold-text">BLACK LABEL LEGACY</h3>
-            <p>One of Ten. Hand-stitched. Limitless.</p>
-            <button class="btn-gold">Request Consultation</button>
+     <div class="container engineering-grid">
+        <div class="eng-visual">
+            <div class="blueprint-frame">
+                <div class="scan-line"></div>
+                <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80" 
+                     alt="V16 Engine Concept" 
+                     id="engine-img">
+                <div class="data-tag top-left">SYS-R_16: ACTIVE</div>
+                <div class="data-tag bottom-right">CORE_TEMP: OPTIMAL</div>
+            </div>
         </div>
-    </section>
+   
+        <div class="eng-text">
+            <div class="header-lockup">
+                <span class="badge">Propulsion Systems</span>
+                <h2 class="glitch-text" data-text="APEX V16 HYBRID">APEX V16 HYBRID</h2>
+            </div>
+            
+            <p class="description">
+                A masterpiece of mechanical engineering. Our bespoke 8.3L naturally aspirated V16 is coupled with three 200kW electric motors to redefine the boundaries of thermodynamic efficiency.
+            </p>
+
+            <div class="spec-grid">
+                <div class="spec-card">
+                    <span class="label">Total Output</span>
+                    <span class="value">1800 <small>HP</small></span>
+                    <div class="progress-bar"><div class="fill" style="width: 95%"></div></div>
+                </div>
+                <div class="spec-card">
+                    <span class="label">Max Velocity</span>
+                    <span class="value">445 <small>KM/H</small></span>
+                    <div class="progress-bar"><div class="fill" style="width: 88%"></div></div>
+                </div>
+                <div class="spec-card">
+                    <span class="label">Rev Ceiling</span>
+                    <span class="value">9,500 <small>RPM</small></span>
+                    <div class="progress-bar"><div class="fill" style="width: 92%"></div></div>
+                </div>
+                <div class="spec-card">
+                    <span class="label">0-200 KM/H</span>
+                    <span class="value">4.8 <small>SEC</small></span>
+                    <div class="progress-bar"><div class="fill" style="width: 98%"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <section id="luxury" class="luxury-banner">
+    <div class="luxury-full-wrapper">
+        <div class="luxury-visual-side">
+            <div class="luxury-content-overlay">
+                <span class="gold-badge">Ultima Series</span>
+                <h3 class="gold-text">BLACK LABEL<br>LEGACY</h3>
+                <p>One of Ten. Hand-stitched. Limitless.</p>
+            </div>
+        </div>
+
+        <div class="luxury-form-side">
+            <div class="form-container-inner">
+                <h4>Request Private Access</h4>
+                <form id="luxury-form">
+                    <div class="input-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="input-group">
+                        <select id="interest" required>
+                            <option value="" disabled selected>— SELECT INTEREST —</option>
+                            <option value="bespoke">Bespoke Commission</option>
+                            <option value="fleet">Fleet Acquisition</option>
+                            <option value="motorsport">Motorsport Program</option>
+                            <option value="concierge">Concierge Engineering</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder="Tell us about your requirements..." rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn-gold-fill">Submit Application</button>
+                    <p class="disclaimer">A representative will contact you via encrypted channel.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
     <script src="script.js"></script>
 </body>
