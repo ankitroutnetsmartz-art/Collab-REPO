@@ -6,6 +6,7 @@
     <title>APEX MOTORS | Performance Engineering</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
 </head>
 <body>
     <nav class="glass-nav">
@@ -33,8 +34,15 @@
 
     <section id="inventory" class="section">
         <div class="container">
+        <div class="inventory-controls">
+        <div class="search-wrapper">
+        <span class="search-icon">⌕</span>
+        <input type="text" id="car-search" placeholder="SEARCH FLEET (E.G. V16, GTR...)" autocomplete="off">
+        </div>
+        </div>
             <div class="section-header">
                 <h2>THE FLEET</h2>
+                
                 <div class="filters">
                     <button class="filter-btn active" data-filter="all">All</button>
                     <button class="filter-btn" data-filter="sport">Sport</button>
@@ -135,7 +143,10 @@
         </div>
     </div>
 </section>
-
-    <script src="script.js"></script>
+<div id="specs-overlay" class="specs-modal">
+    <div class="modal-close" onclick="closeSpecs()">&times; CLOSE</div>
+    <div id="specs-content"></div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
