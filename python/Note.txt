@@ -1,0 +1,2 @@
+Make it executable:
+chmod +x collect_data.py
